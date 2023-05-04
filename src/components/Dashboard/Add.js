@@ -27,7 +27,7 @@ const Add = ({ users, setUsers, setIsAdding }) => {
 
     users.push(newUser);
     localStorage.setItem('users_data', JSON.stringify(users));
-    setusers(users);
+    setUsers(users);
     setIsAdding(false);
 
     Swal.fire({

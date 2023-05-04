@@ -34,7 +34,7 @@ const Edit = ({ users, selectedUser, setUsers, setIsEditing }) => {
     }
 
     localStorage.setItem('users_data', JSON.stringify(users));
-    setusers(users);
+    setUsers(users);
     setIsEditing(false);
 
     Swal.fire({
