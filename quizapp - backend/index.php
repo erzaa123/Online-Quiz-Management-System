@@ -227,7 +227,7 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <!--footer end-->
-  lhflfh
+  
 
 </body>
 </html>
