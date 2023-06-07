@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Project Worlds || FEEDBACK </title>
+<title></title>
 <link  rel="stylesheet" href="css/bootstrap.min.css"/>
  <link  rel="stylesheet" href="css/bootstrap-theme.min.css"/>    
  <link rel="stylesheet" href="css/main.css">
@@ -95,13 +95,8 @@ echo '<a href="logout.php?q=feedback.php" class="pull-right sub1 btn title3"><sp
 <?php if(@$_GET['q'])echo '<span style="font-size:18px;"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;'.@$_GET['q'].'</span>';
 else
 {echo' 
-You can send us your feedback through e-mail on the following e-mail id:<br />
-<div class="row">
-<div class="col-md-1"></div>
-<div class="col-md-10">
-<a href="mailto:chiraggoel.53784@gmail.com" style="color:#000000">sunnygkp10@gmail.com</a><br /><br />
-</div><div class="col-md-1"></div></div>
-<p>Or you can directly submit your feedback by filling the enteries below:-</p>
+
+<p>Submit your feedback by filling the enteries below:</p>
 <form role="form"  method="post" action="feed.php?q=feedback.php">
 <div class="row">
 <div class="col-md-3"><b>Name:</b><br /><br /><br /><b>Subject:</b></div>
@@ -145,19 +140,11 @@ You can send us your feedback through e-mail on the following e-mail id:<br />
 </div>
 <div class="col-md-3 box">
 <a href="#" data-toggle="modal" data-target="#login">Admin Login</a></div>
-
 <div class="col-md-3 box">
 <a href="feedback.php" target="_blank">Feedback</a></div></div>
-<!-- Modal For Developers-->
-<div class="modal fade title1" id="developers">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" style="font-family:'typo' "><span style="color:orange">Developers</span></h4>
-      </div>
+
 	  
-      
+    
     
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
