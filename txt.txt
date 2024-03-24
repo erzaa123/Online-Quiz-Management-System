@@ -1,0 +1,39 @@
+
+<?php
+include ('dbConnection.php');
+if(isset($_POST['submit'])){
+    $name = $_POST['player_name'];
+    $team = $_POST['team'];
+    $query = mysqli_query($con,"Insert into player (Player_Name,Number,BirthYear,TeamId) Values ('$name','$number','$birthyear','$teamid')");
+    if($query){
+        echo "<script>alert('done')</script>";
+    }else{
+        echo "<script>alert('error')</script>";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <label>Player Name:</label>
+        <input type="text" id="player_name"><br><br>
+        <select name="team">
+            <?php
+            include ('dbConnection.php');
+            $teams = mysqli_query($con, "Select * from team");
+            while($t = mysqli_fetch_array($teams)) {
+            ?>
+            <option value="<?php echo $t['TeamId'] ?>"><?php echo $t['Name']?></option>
+            <?php } ?>
+        </select>
+        <button type="submit" name="submit">Submit</button>
+    </form>
+</body>
+</html>
