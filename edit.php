@@ -7,7 +7,8 @@
 		$firstname = $_POST['firstname'];
 		$lastname = $_POST['lastname'];
 		$address = $_POST['address'];
-		$sql = "UPDATE members SET firstname = '$firstname', lastname = '$lastname', address = '$address' WHERE id = '$id'";
+		$chef = $_POST['chef'];
+		$sql = "UPDATE members SET firstname = '$firstname', lastname = '$lastname', address = '$address' ,chef = '$chef 'WHERE id = '$id'";
 
 		//use for MySQLi OOP
 		if($conn->query($sql)){
