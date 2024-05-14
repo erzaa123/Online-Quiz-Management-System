@@ -6,7 +6,8 @@
 		$firstname = $_POST['firstname'];
 		$lastname = $_POST['lastname'];
 		$address = $_POST['address'];
-		$sql = "INSERT INTO members (firstname, lastname, address) VALUES ('$firstname', '$lastname', '$address')";
+		$chef = $_POST['chef'];
+		$sql = "INSERT INTO members (firstname, lastname, address,chef) VALUES ('$firstname', '$lastname', '$address','$chef')";
 
 		//use for MySQLi OOP
 		if($conn->query($sql)){
