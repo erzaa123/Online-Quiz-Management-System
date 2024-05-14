@@ -63,8 +63,8 @@
 						<th>Firstname</th>
 						<th>Lastname</th>
 						<th>Address</th>
-						<th>Action</th>
 						<th>Chef</th>
+						<th>Action</th>
 					</thead>
 					<tbody>
 						<?php
@@ -81,6 +81,7 @@
 									<td>".$row['lastname']."</td>
 									<td>".$row['chef']."</td>
 									<td>".$row['address']."</td>
+	 								<td>".$row['chef']."</td>
 									
 									<td>
 										<a href='#edit_".$row['id']."' class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Edit</a>
