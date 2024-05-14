@@ -34,6 +34,14 @@
 						<input type="text" class="form-control" name="address" value="<?php echo $row['address']; ?>">
 					</div>
 				</div>
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label modal-label">Chef:</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="chef" value="<?php echo $row['chef']; ?>">
+					</div>
+				</div>
             </div> 
 			</div>
             <div class="modal-footer">
