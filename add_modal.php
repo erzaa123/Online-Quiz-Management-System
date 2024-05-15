@@ -15,6 +15,19 @@
 					unset( $_SESSION['status']);
 				}
 				
+				include('connection.php');
+				if(isset($_POST['submit'])){
+					$chef=$_POST['chef'];
+					$sql="INSERT INTO `chef`(`chef`)VALUES ($chef)";
+					if(!mysqli_query($conn,$sql))
+					{
+						echo "data not inserted";
+					}
+					else
+					{
+                        echo "data inserted successfully";
+					}
+				}
 				?>
 			<form method="POST" action="add.php">
 				<div class="row form-group">
@@ -40,23 +53,12 @@
 					<div class="col-sm-10">
 						<input type="text" class="form-control" name="address" required>
 					</div>
-					<div class="col-sm-2">
-						<label class="control-label modal-label">Chef:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" name="chef" required>
-					</div>
-					
 					<label for="ChefId">Chef Id:</label>
 						<select name="chef" class="form-control">
 							<option value="">All Chefs</option>
 							<option value="Male">Male</option>	
 							<option value="Female">Female</option>
 						</select>
-			<div class="form-group">
-				<button type="submit" name="save_select" class="btn btn-primary" >Save Selectbox</button> 
-			</div>
-				</div>
             </div> 
 			</div>
             <div class="modal-footer">
