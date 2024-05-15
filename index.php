@@ -59,12 +59,13 @@
 			<div class="row">
 				<table id="myTable" class="table table-bordered table-striped">
 					<thead>
-						<th>ID</th>
+						<th>IDdd</th>
 						<th>Firstname</th>
 						<th>Lastname</th>
 						<th>Address</th>
 						<th>Chef</th>
 						<th>Action</th>
+						
 					</thead>
 					<tbody>
 						<?php
@@ -79,9 +80,8 @@
 									<td>".$row['id']."</td>
 									<td>".$row['firstname']."</td>
 									<td>".$row['lastname']."</td>
-									<td>".$row['chef']."</td>
 									<td>".$row['address']."</td>
-	 								<td>".$row['chef']."</td>
+									<td>".$row['chef']."</td>
 									
 									<td>
 										<a href='#edit_".$row['id']."' class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Edit</a>
@@ -111,12 +111,7 @@
 							/////////////////
 
 						?>
-						<label for="ChefId">Chef Id:</label>
-						<select name="" id="">
-							<option value="">All Chefs</option>
-							<option value="Male">Male</option>	
-							<option value="Female">Female</option>
-						</select>
+						
 					</tbody>
 				</table>
 			</div>
