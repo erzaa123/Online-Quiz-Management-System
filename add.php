@@ -37,20 +37,6 @@
 session_start();
 $conn = mysqli_connect("localhost", "root", "", "mydatabase");
 
-if (!isset($_POST['save_select'])) {
 
-	$chef = $_POST['chef'];
-
-	$query = "INSERT INTO mydatabase (chef) VALUES ('$chef')";
-    $query_run = mysqli_query($conn, $query);
-
-	if($query_run){
-		$_SESSION['status'] = "Data Added!";
-		header("Location: C:\xampp\htdocs\exam\add_modal.php");
-	}else{
-		$_SESSION['status'] = "Not inserted!";
-		header("Location: C:\xampp\htdocs\exam\add_modal.php");
-	}
-}
 
 ?>
